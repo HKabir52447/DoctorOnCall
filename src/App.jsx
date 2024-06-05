@@ -1,10 +1,15 @@
+import { Outlet } from 'react-router-dom'
 import './App.css'
+import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
   return (
     <>
-      <h1 className='bg-green-500'>Doctor on Call</h1>
+      <Navbar />
+      <Outlet />
+      <Footer />
     </>
   )
 }
