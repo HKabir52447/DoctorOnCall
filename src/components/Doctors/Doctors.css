@@ -1,0 +1,49 @@
+.doctor{
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+}
+.doctor:hover{
+    border-radius: 0 12px 12px 12px;
+}
+.before_elem{
+    z-index: -1;
+    position: absolute;
+    left: -2px;
+    top: 10px;
+    transition: all 0.3s linear;
+    border-radius: 50px 0;
+}
+.doctor:hover .before_elem{
+    transform: translateY(-43px);
+}
+.d_img{
+    width: 115px;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border-rotate{
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    border: 2px solid red;
+    border: 2px solid rgb(34, 197, 94);
+    border-color: red rgb(34, 197, 94);
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+
+.d_img img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    padding: 4px;
+}
+.doctor:hover .border-rotate{
+    transform: rotate(90deg);
+}
+
+
+

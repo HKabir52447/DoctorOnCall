@@ -9,6 +9,9 @@ import {
     createBrowserRouter
 } from 'react-router-dom'
 import ErrorPage from './pages/ErrorPage.jsx';
+import Doctors from './components/Doctors/Doctors.jsx';
+import SlidingForm from './components/Sliding form/SlidingForm.jsx';
+import DoctorDetails from './components/DoctorDetails/DoctorDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +26,18 @@ const router = createBrowserRouter([
           {
               path: '/about',
               element: <About />,
+          },
+          {
+              path: '/doctors',
+              element: <Doctors />,
+          },
+          {
+              path: '/slidingForm',
+              element: <SlidingForm />,
+          },
+          {
+              path: '/doctor-details',
+              element: <DoctorDetails />,
           },
 
       ]

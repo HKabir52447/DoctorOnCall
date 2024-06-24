@@ -5,7 +5,7 @@ import { AiOutlineClose, AiOutlineMenuUnfold } from "react-icons/ai";
 const Navbar = () => {
   const [toggle, setToggle] = useState(true);
   return (
-    <div className="sticky top-0 bg-slate-50 z-10 shadow">
+    <div className="sticky top-0 bg-slate-100 z-50 shadow">
     <div className="nav_bar max-w-[1240px] mx-auto py-3 flex justify-between items-center px-3 ">
       
       {toggle ? (
@@ -65,10 +65,14 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="px-10 mr-5">
-        <button className="text-[17px] font-bold border-2 border-green-400 py-1 px-6 hover:bg-green-500 hover:text-white duration-100 hover:border-transparent">
-          Login
-        </button>
+      <div className="px-10 sm:mr-5">
+
+        <Link
+              className="text-[17px] font-bold border-2 border-green-400 py-1 px-4 hover:bg-green-500 hover:text-white duration-100 hover:border-transparent"
+              to="/SlidingForm"
+            >
+              Sign In
+            </Link>
       </div>
 
       </div>
