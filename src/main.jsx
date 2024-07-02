@@ -12,6 +12,8 @@ import ErrorPage from './pages/ErrorPage.jsx';
 import Doctors from './components/Doctors/Doctors.jsx';
 import SlidingForm from './components/Sliding form/SlidingForm.jsx';
 import DoctorDetails from './components/DoctorDetails/DoctorDetails.jsx';
+import AllDoctors from './components/AllDoctors/AllDoctors.jsx';
+import AllDepartments from './components/AllDepartments/AllDepartments.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,8 +30,8 @@ const router = createBrowserRouter([
               element: <About />,
           },
           {
-              path: '/doctors',
-              element: <Doctors />,
+              path: '/all-doctors',
+              element: <AllDoctors />,
           },
           {
               path: '/slidingForm',
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
           {
               path: '/doctor-details',
               element: <DoctorDetails />,
+          },
+          {
+              path: '/all-doctors',
+              element: <AllDoctors />,
+          },
+          {
+              path: '/all-departments',
+              element: <AllDepartments />,
           },
 
       ]

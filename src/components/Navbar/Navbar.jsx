@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenuUnfold } from "react-icons/ai";
+import logo from '../../assets/logo.png'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(true);
@@ -21,7 +22,9 @@ const Navbar = () => {
       )}
       <div className="menu md:flex flex-row justify-between items-center">
         <div className="logo">
-          <h1 className="text-4xl text-green-500 font-bold">Logo</h1>
+          <Link to="/">
+          <img src={logo} alt="Logo" className="w-[60px]"/>
+          </Link>
         </div>
         <div className="nav-link">
           <ul className="hidden md:flex gap-1 items-center font-bold text-[17px] md:ml-5">
@@ -34,7 +37,7 @@ const Navbar = () => {
 
             <Link
               className="py-2 px-6 hover:bg-green-500 hover:text-white duration-150"
-              to="/doctors"
+              to="/all-doctors"
             >
               All Doctors
             </Link>

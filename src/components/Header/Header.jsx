@@ -10,14 +10,14 @@ const Header = () => {
         />
         <div className="py-5 mb-4 md:max-w-[55%] mx-3">
           <h1 className="text-2xl md:text-5xl font-bold">
-            Welcome to OnCallCare
+            Welcome to DoctorOnCall
           </h1>
           <p className="py-6">
-            Discover the future of healthcare with OnCallCare, your trusted
+            Discover the future of healthcare with DoctorOnCall, your trusted
             platform for convenient and reliable medical consultations. Whether
             you're seeking expert advice, need to book an appointment, or prefer
             a virtual consultation from the comfort of your home, we have you
-            covered. With OnCallCare, you can easily find doctors based on their
+            covered. With DoctorOnCall, you can easily find doctors based on their
             specialties, read patient reviews, and choose the right expert for
             your needs. Join us today and take the first step towards a
             healthier, more connected future.
